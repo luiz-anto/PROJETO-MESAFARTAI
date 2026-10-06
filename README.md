@@ -1,4 +1,4 @@
-#MESAFARTAI – Logística e Inteligência Assistiva no Combate à Fome 
+# MESAFARTAI – Logística e Inteligência Assistiva no Combate à Fome 
 
 Plataforma de IA que conecta doadores de alimentos a ONGs e abrigos em tempo real — reduzindo desperdício e combatendo a fome com tecnologia e Inteligência Artificial.
 
