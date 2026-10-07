@@ -1,1 +1,12 @@
-Documentação do projeto
+# Regras – MESAFARTAI
+
+Criar um repositório público no GitHub chamado **PROJETO-MESAFARTAI**.
+Adicionar todos os integrantes e o professor como colaboradores.
+Criar um README.md com título, descrição, ODS 2 e dados dos integrantes.
+Criar a pasta `/docs` com `regras.txt` e `escopo_projeto.md`.
+Criar o logotipo do projeto usando Inteligência Artificial.
+Salvar o logo em `assets/logo_mesafartai.png`.
+Registrar o prompt utilizado para criar o logo no escopo.
+Criar `/src/database.py` utilizando SQLite3.
+O banco deverá armazenar usuários, doações e matches logísticos.
+Inserir dados iniciais de teste e executar o banco sem erros.
