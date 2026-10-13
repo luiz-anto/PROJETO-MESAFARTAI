@@ -23,3 +23,10 @@ Matchmaking Logístico & Banco de Dados (KNN + SQLite3):
 Algoritmo KNN para calcular o match perfeito entre a oferta do doador e a ONG receptora mais próxima. 
 
 Banco de dados SQLite3 para persistência de doadores, receptores, doações e histórico de coletas. 
+
+
+Passo 4: Script de Banco de Dados (src/database.py) 
+
+Criar o script Python responsável por inicializar o banco de dados relacional SQLite3 (mesafartai.db) com as tabelas fundamentais e popular com dados de teste. 
+
+O código deve contemplar a estrutura abaixo: 
