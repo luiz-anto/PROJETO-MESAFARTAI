@@ -1,6 +1,12 @@
 # MESAFARTAI – Logística e Inteligência Assistiva no Combate à Fome 
 
-Plataforma de IA que conecta doadores de alimentos a ONGs e abrigos em tempo real — reduzindo desperdício e combatendo a fome com tecnologia e Inteligência Artificial.
+Diariamente, toneladas de alimentos próprios para consumo são descartadas por feirantes, supermercados, restaurantes e produtores devido à proximidade da data de validade, pequenos defeitos estéticos ou excesso de estoque. Ao mesmo tempo, centenas de ONGs, abrigos e cozinhas comunitárias lutam diariamente contra a escassez de suprimentos para alimentar famílias em situação de vulnerabilidade. 
+
+O grande gargalo dessa equação não é a falta de comida, mas a falta de logística ágil e comunicação eficiente. Um comerciante não tem tempo para preencher formulários extensos para doar 30 kg de alimento que vão vencer em 24 horas. 
+
+O MESAFARTAI nasce para mudar essa realidade. Através da Inteligência Assistiva e Processamento de Linguagem Natural (NLU), vocês construirão uma aplicação conversacional em Python capaz de entender mensagens informais de doadores via chat, extrair automaticamente produtos, quantidades e validades via Regex, e realizar o matchmaking logístico usando algoritmos não supervisionados (KNN) para direcionar o alimento até a ONG mais próxima em tempo recorde. 
+
+Este projeto está diretamente alinhado à ODS 2 da ONU (Fome Zero e Agricultura Sustentável). Mais do que uma avaliação acadêmica, este projeto será um case de impacto social e tecnologia do seu portfólio profissional.
 
 
 Grazielli Bueno Lourenço - 157819
