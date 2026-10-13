@@ -1,15 +1,25 @@
-# Escopo do Projeto – MESAFARTAI
+3. ESCOPO GERAL DO PROJETO & REQUISITOS TÉCNICOS 
 
-O MESAFARTAI busca reduzir o desperdício de alimentos e facilitar sua distribuição para organizações que combatem a fome.
-O público-alvo é dividido entre **Doadores** e **ONGs**.
-Doadores poderão cadastrar alimentos disponíveis para doação.
-ONGs poderão solicitar alimentos e consultar informações.
-O sistema utilizará NLU para compreender mensagens enviadas pelo chat.
-As principais intenções são: `cadastrar_doacao`, `solicitar_alimentos`, `consultar_status` e `fora_de_escopo`.
-O sistema coletará informações como nome, alimento, quantidade e validade.
-Também serão utilizados CEP, localização e telefone para facilitar o matchmaking.
-Regex será utilizada para extrair quantidades, alimentos e prazos das mensagens.
-Um mecanismo de Threshold/Fallback evitará respostas incorretas quando houver baixa confiança.
-O KNN será utilizado para encontrar a ONG mais próxima da doação.
-O banco SQLite armazenará usuários, doações e matches.
-O projeto está alinhado à **ODS 2 – Fome Zero e Agricultura Sustentável**.
+O ecossistema do MESAFARTAI é composto por 4 grandes pilares tecnológicos desenvolvidos 100% em Python: 
+
+Interface Conversacional (Front-End - Streamlit): 
+
+Chat interativo para cadastro de doações e consultas de ONGs. 
+
+Alternância de perfil na barra lateral ([Sou Doador | Sou ONG]). 
+
+Motor de NLU & Trava de Segurança (Back-End - Scikit-Learn / Spacy): 
+
+Classificação de intenções (cadastrar_doacao, solicitar_alimentos, consultar_status, fora_de_escopo). 
+
+Mecanismo de Threshold (ex: < 0.60) com resposta de Fallback amigável quando a frase for ambígua. 
+
+Extração de Entidades (Regex): 
+
+Captura automática de quantidades (kg, caixas, unidades), tipos de alimentos e prazos de validade (hoje, amanhã, 18h). 
+
+Matchmaking Logístico & Banco de Dados (KNN + SQLite3): 
+
+Algoritmo KNN para calcular o match perfeito entre a oferta do doador e a ONG receptora mais próxima. 
+
+Banco de dados SQLite3 para persistência de doadores, receptores, doações e histórico de coletas. 
