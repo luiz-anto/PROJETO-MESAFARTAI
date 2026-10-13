@@ -7,3 +7,4 @@ Grazielli Bueno Lourenço - 157819
 Luiz Antonio Marcos - 143109
 Rafael de Mel dos Santos - 145314
 Vitoria Katlen da Silva - 149742
+Arthur Brito - 
