@@ -1,6 +1,168 @@
+Aula 8
+
 MANIFESTO & A CAUSA NOBRE DO PROJETO
 "A tecnologia só alcança seu propósito mais elevado quando é utilizada para resolver dores humanas reais e salvar vidas."
 Diariamente, toneladas de alimentos próprios para consumo são descartadas por feirantes, supermercados, restaurantes e produtores devido à proximidade da data de validade, pequenos defeitos estéticos ou excesso de estoque. Ao mesmo tempo, centenas de ONGs, abrigos e cozinhas comunitárias lutam diariamente contra a escassez de suprimentos para alimentar famílias em situação de vulnerabilidade.
 O grande gargalo dessa equação não é a falta de comida, mas a falta de logística ágil e comunicação eficiente. Um comerciante não tem tempo para preencher formulários extensos para doar 30 kg de alimento que vão vencer em 24 horas.
 O MESAFARTAI nasce para mudar essa realidade. Através da Inteligência Assistiva e Processamento de Linguagem Natural (NLU), vocês construirão uma aplicação conversacional em Python capaz de entender mensagens informais de doadores via chat, extrair automaticamente produtos, quantidades e validades via Regex, e realizar o matchmaking logístico usando algoritmos não supervisionados (KNN) para direcionar o alimento até a ONG mais próxima em tempo recorde.
 Este projeto está diretamente alinhado à ODS 2 da ONU (Fome Zero e Agricultura Sustentável). Mais do que uma avaliação acadêmica, este projeto será um case de impacto social e tecnologia do seu portfólio profissional.
+
+Aula 9
+
+CONSTRUÇÃO DA ETAPA 2 (AC-3): MOTOR NLU E TRAVA DE THRESHOLD
+
+Com o repositório organizado e o banco SQLite gerado, agora é hora de construir a inteligência de linguagem do MESAFARTAI.
+Nesta etapa, cada grupo irá implementar o módulo src/nlu.py utilizando TF-IDF + Random Forest e a Trava de Segurança (Threshold/Fallback).
+
+DESENVOLVIMENTO COM USO DO VS-CODE (OBRIGATÓRIO)
+
+1.Clonar o Repositório: Terminal ou Prompt de Comando.
+ 1.	No GitHub, clique no botão verde <> Code -> Copie a URL HTTPS do repositório.
+ 2.	Abra o terminal do seu computador e execute:
+git clone https://github.com/SEU_USUARIO/PROJETO-MESAFARTAI.git (substitua com o link que acabou de copiar)
+
+Em seguida: cd PROJETO-MESAFARTAI
+
+2. Abrir no VS Code e Instalar Bibliotecas: Ambiente Local.
+ 1.	Abra a pasta do projeto no VS Code (code . no terminal ou Arquivo -> Abrir Pasta).
+
+ 2.	Crie o arquivo requirements.txt na raiz com o conteúdo abaixo:
+streamlit
+scikit-learn
+pandas
+numpy
+
+ 3.	Abra o terminal do VS Code e instale os pacotes:
+pip install -r requirements.txt
+
+3. Criar o código do Motor NLU: Arquivo src/nlu.py.
+Crie o arquivo nlu.py dentro do diretório src/ e salve o código-fonte fornecido abaixo:
+
+"""
+MESAFARTAI - Módulo de Processamento de Linguagem Natural (NLU)
+Arquivo: src/nlu.py
+Descrição: Pipeline com TF-IDF, Random Forest e Trava de Segurança por Threshold.
+"""
+
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.ensemble import RandomForestClassifier
+
+# 1. BASE DE DADOS DE TREINO (Dataset de Intenções)
+frases_treino = [
+    # Intenção: cadastrar_doacao
+    "Quero doar 10 kg de arroz",
+    "Posso contribuir com 15 litros de leite",
+    "Tenho 30 kg de banana para doar",
+    "Tenho 20 caixas de tomate para doar hoje",
+    "Gostaria de oferecer refeições prontas para abrigo",
+    "Tenho sobra de alimentos do meu restaurante",
+    "Posso entregar 5 kg de feijão perto da validade",
+    "Queremos cadastrar uma doação de legumes",
+    
+    # Intenção: solicitar_alimentos
+    "Nossa ONG precisa de doações de alimentos",
+    "Estamos buscando marmitas e cestas básicas urgentemente",
+    "Quais doações estão disponíveis para retirada na região?",
+    "Preciso de suprimentos para o abrigo comunitário",
+    "Como faço para solicitar comida para nossa cozinha social?",
+    
+    # Intenção: consultar_status
+    "Onde está o meu pedido de doação?",
+    "Gostaria de ver o histórico de matches das ONGs",
+    "Qual o status do voluntário que vai retirar os alimentos?",
+    "Como consultar se a doação já foi entregue?",
+    
+    # Intenção: fora_de_escopo (Frases aleatórias / Ruídos)
+    "Qual é a previsão do tempo para hoje?",
+    "Gosto de assistir filmes de ficção científica",
+    "Quem venceu o jogo de futebol ontem?",
+    "Como faço para trocar a senha da minha conta bancária?"
+]
+
+intencoes_treino = [
+    "cadastrar_doacao", "cadastrar_doacao", "cadastrar_doacao", 
+    "cadastrar_doacao", "cadastrar_doacao", "cadastrar_doacao", "cadastrar_doacao", "cadastrar_doacao",
+    
+    "solicitar_alimentos", "solicitar_alimentos", "solicitar_alimentos", 
+    "solicitar_alimentos", "solicitar_alimentos",
+    
+    "consultar_status", "consultar_status", "consultar_status", "consultar_status",
+    
+    "fora_de_escopo", "fora_de_escopo", "fora_de_escopo", "fora_de_escopo"
+]
+
+class MotorNLU:
+    def __init__(self, limiar_threshold=0.60):
+        self.limiar_threshold = limiar_threshold
+        self.vectorizer = TfidfVectorizer(ngram_range=(1, 2))
+        self.classifier = RandomForestClassifier(n_estimators=80, random_state=42)
+        self._treinar_modelo()
+
+    def _treinar_modelo(self):
+        """Vetoriza os textos e treina o classificador Random Forest."""
+        X_vec = self.vectorizer.fit_transform(frases_treino)
+        self.classifier.fit(X_vec, intencoes_treino)
+        print(" [NLU] Modelo Random Forest e Vetorizador TF-IDF treinados com sucesso!")
+
+    def processar_mensagem(self, texto_usuario):
+        """
+        Processa uma mensagem do usuário e retorna a intenção, 
+        o nível de confiança e a decisão de Fallback.
+        """
+        # 1. Vetorização da entrada
+        vetor_texto = self.vectorizer.transform([texto_usuario])
+        
+        # 2. Predição de probabilidade via Random Forest
+        probabilidades = self.classifier.predict_proba(vetor_texto)[0]
+        max_confianca = float(np.max(probabilidades))
+        indice_classe = int(np.argmax(probabilidades))
+        intencao_predita = self.classifier.classes_[indice_classe]
+        
+        # 3. Trava de Segurança por Threshold
+        if max_confianca < self.limiar_threshold or intencao_predita == "fora_de_escopo":
+            return {
+                "intencao": "fallback",
+                "confianca": max_confianca,
+                "resposta": (
+                    "Desculpe, não consegui entender com clareza o seu pedido. \n"
+                    "Você pode refazer a mensagem informando se deseja **doar alimentos** "
+                    "ou **solicitar doações para uma ONG**?"
+                )
+            }
+        
+        return {
+            "intencao": intencao_predita,
+            "confianca": max_confianca,
+            "resposta": f"Intenção '{intencao_predita}' identificada com {max_confianca*100:.1f}% de confiança."
+        }
+
+# --- TESTE DO MÓDULO EM TEMPO DE EXECUÇÃO ---
+if __name__ == "__main__":
+    nlu = MotorNLU(limiar_threshold=0.60)
+    
+    # Bateria de testes automatizados
+    frases_teste = [
+        "Tenho 30 kg de banana para doar",
+        "Nossa instituição precisa de mantimentos",
+        "Qual é a receita de bolo de cenoura?", # Frase fora de escopo
+        "coisa comida doar la" # Frase confusa / ambígua
+    ]
+    
+    print("\n--- BATERIA DE TESTES DE ESTRESSE NLU ---")
+    for frase in frases_teste:
+        resultado = nlu.processar_mensagem(frase)
+        print(f"\nEntrada: '{frase}'")
+        print(f"Intenção: {resultado['intencao']} | Confiança: {resultado['confianca']:.2f}")
+        print(f"Retorno: {resultado['resposta']}")
+4. Executar e Testar: Validação Local.
+No terminal do VS Code, execute:
+python src/nlu.py
+
+5. Realizar Commit e Push para o GitHub:
+No terminal do VS Code, sincronize as alterações com o repositório do projeto:
+git add .
+git commit -m "feat(nlu): implementa motor TF-IDF + Random Forest com trava de threshold"
+git push origin main
+
+
