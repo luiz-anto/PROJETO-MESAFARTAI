@@ -1,0 +1,8 @@
+streamlit>=1.50
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+spacy>=3.8,<3.9
+pt_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl
+requests>=2.31
+tzdata

@@ -1,0 +1,85 @@
+frase,intencao
+Aceito a primeira opção,aceitar_opcao
+Concordo com essa sugestão,aceitar_opcao
+"Está ótimo, confirmo",aceitar_opcao
+Fechou,aceitar_opcao
+"Ok, pode confirmar para mim",aceitar_opcao
+"Pode ser, aceito",aceitar_opcao
+"Sim, essa ONG está boa",aceitar_opcao
+"Tudo bem, vou levar para essa",aceitar_opcao
+"isso, quero essa",aceitar_opcao
+perfeito,aceitar_opcao
+pode registrar com essa ONG,aceitar_opcao
+sim!,aceitar_opcao
+"Boa tarde, queria doar umas 40 marmitas que sobraram aqui",cadastrar_doacao
+Gostaria de saber se posso doar 25 kg de farinha,cadastrar_doacao
+"Oi, meu nome é Paulo e quero doar 20 kg de feijão, meu email é paulo@teste.com",cadastrar_doacao
+Posso mandar 100 litros de suco que vencem semana que vem?,cadastrar_doacao
+Quero entregar 70 kg de arroz para quem precisar,cadastrar_doacao
+Sou da padaria Central e tenho pão para doar todo fim de tarde,cadastrar_doacao
+Vou doar 6 pacotes de café e 10 de açúcar,cadastrar_doacao
+"doar alimentos pra quem precisa, tenho 15 cestas",cadastrar_doacao
+"minha lanchonete fecha hoje e sobrou bastante comida, quero doar",cadastrar_doacao
+queria doar o estoque de legumes da minha feira,cadastrar_doacao
+tenho 8 caixas de laranja pra doar,cadastrar_doacao
+tenho um monte de fruta madura pra doação,cadastrar_doacao
+A ONG já aceitou o que eu doei?,consultar_status
+Como acompanho a doação que cadastrei?,consultar_status
+Fiz uma doação ontem e quero saber o andamento,consultar_status
+"Meu código de doação é MF-20260920-0003, e agora?",consultar_status
+Pode checar a minha doação para mim?,consultar_status
+Preciso saber onde está minha doação,consultar_status
+Qual a situação do protocolo MF-20261101-0120?,consultar_status
+Quero o status do meu pedido,consultar_status
+"Quero ver como está minha doação, o protocolo é MF-20261015-0007",consultar_status
+Tem novidade sobre a doação que eu fiz?,consultar_status
+consulta de protocolo,consultar_status
+já foi coletada minha doação?,consultar_status
+Como abro uma conta no banco?,fora_de_escopo
+Como faço pra cozinhar macarrão?,fora_de_escopo
+Me conta uma curiosidade,fora_de_escopo
+Me recomenda um filme,fora_de_escopo
+Onde compro tomate mais barato?,fora_de_escopo
+Qual a cotação do dólar?,fora_de_escopo
+Qual a melhor receita de lasanha?,fora_de_escopo
+Quem ganhou o campeonato?,fora_de_escopo
+Quero aprender inglês,fora_de_escopo
+Vai chover amanhã?,fora_de_escopo
+quanto custa o feijão no atacado?,fora_de_escopo
+sdfsdfsdf,fora_de_escopo
+"Essa fica longe pra mim, tem outra?",recusar_opcao
+"Essa não, a próxima",recusar_opcao
+Não aceito essa sugestão,recusar_opcao
+"Não posso ir lá, qual a próxima?",recusar_opcao
+"Não vai dar, me mostra a outra",recusar_opcao
+"Não, mostra a outra opção",recusar_opcao
+Prefiro ver a segunda ONG,recusar_opcao
+Quero outra ONG por favor,recusar_opcao
+Rejeito essa,recusar_opcao
+Tem uma segunda opção?,recusar_opcao
+"nao, a outra",recusar_opcao
+não quero essa ONG,recusar_opcao
+Como eu uso esse chat?,saudacao_ajuda
+"E aí, tudo certo?",saudacao_ajuda
+"Oi, boa noite!",saudacao_ajuda
+"Oi, o que dá pra fazer aqui?",saudacao_ajuda
+Olá! Pode me orientar?,saudacao_ajuda
+"Olá, o que é esse sistema?",saudacao_ajuda
+"Olá, preciso de uma ajuda",saudacao_ajuda
+"Opa, tudo bem?",saudacao_ajuda
+Queria entender como funciona o sistema,saudacao_ajuda
+"boa tarde, pode me ajudar?",saudacao_ajuda
+"bom dia, tudo bem?",saudacao_ajuda
+me explica como funciona,saudacao_ajuda
+Como a minha comunidade consegue pedir alimentos?,solicitar_alimentos
+Como a nossa cozinha solidária recebe doação?,solicitar_alimentos
+"Estamos sem comida na creche, como faço para pedir?",solicitar_alimentos
+Gostaria de solicitar alimentos para 50 famílias,solicitar_alimentos
+Nossa casa de acolhimento está precisando de alimentos,solicitar_alimentos
+Nossa entidade precisa de leite e arroz,solicitar_alimentos
+Preciso de comida para meus filhos,solicitar_alimentos
+Quero receber as doações da região,solicitar_alimentos
+Quero registrar minha associação para receber cestas,solicitar_alimentos
+Somos voluntários e queremos pedir mantimentos,solicitar_alimentos
+Tem algum alimento disponível para o nosso abrigo?,solicitar_alimentos
+falta comida aqui no abrigo,solicitar_alimentos

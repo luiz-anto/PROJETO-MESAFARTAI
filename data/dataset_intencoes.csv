@@ -1,0 +1,575 @@
+frase,intencao
+Aceito,aceitar_opcao
+"Beleza, aceito",aceitar_opcao
+Combinado,aceitar_opcao
+Confirmo,aceitar_opcao
+Essa serve,aceitar_opcao
+"Está bom, aceito",aceitar_opcao
+Eu aceito essa ONG,aceitar_opcao
+Fechado,aceitar_opcao
+Fico com a primeira,aceitar_opcao
+"Gostei, vou doar para essa",aceitar_opcao
+"Ok, pode confirmar",aceitar_opcao
+"Ok, podeconfirmar",aceitar_opcao
+Opção 1 está ótima,aceitar_opcao
+"Perfeito, vou levar lá",aceitar_opcao
+Pode confirmar essa opção,aceitar_opcao
+Pode ser essa mesmo,aceitar_opcao
+Quero essa ONG,aceitar_opcao
+Sim,aceitar_opcao
+"Tá ótimo, pode ser",aceitar_opcao
+aceito sim,aceitar_opcao
+"beleza, aceito",aceitar_opcao
+bora,aceitar_opcao
+combinado,aceitar_opcao
+concordo,aceitar_opcao
+confirmo,aceitar_opcao
+"está bom, aceito",aceitar_opcao
+eu aceito essa ong,aceitar_opcao
+fechado,aceitar_opcao
+fico com a primeira,aceitar_opcao
+iso mesmo,aceitar_opcao
+isso mesmo,aceitar_opcao
+ok,aceitar_opcao
+pode confirmar essa opção,aceitar_opcao
+pode mandar,aceitar_opcao
+positivo,aceitar_opcao
+sim,aceitar_opcao
+"sim, aceito a ONG sugerida",aceitar_opcao
+"sim, aceito a ong sugerida",aceitar_opcao
+"sim, pode ser",aceitar_opcao
+"tudo certo, pode ser",aceitar_opcao
+"uhum, pode ser",aceitar_opcao
+"ótimo, pode ser essa",aceitar_opcao
+"Bianca Dias aqui, tenho refeições pronts e queijo pra doar, vence hoje",cadastrar_doacao
+"Boa noite! Tenho cenoura para doação, 50 quilos. CEP 06754-020",cadastrar_doacao
+"Boa tarde! Tenho farinha para doação, 80 bandejas. CEP 06705-000",cadastrar_doacao
+"Boa tarde, quero doar 15dúzias deágua mineral",cadastrar_doacao
+"Bom dia, quero doar 100fardos de pão",cadastrar_doacao
+"Bom dia, quero doar 5saocs de arroz",cadastrar_doacao
+"Doação: 150 caixas de verduras, vence amanhã. Contato: contato@mercadosilva.com.br",cadastrar_doacao
+"Doação: 150 litros de suco, vence em 10 dias. Contato: contato@mercadosilva.com.br",cadastrar_doacao
+"Doação: 2 fardos de ovos, perto do vencimento. Contato: ana.p@empresa.com",cadastrar_doacao
+"Doação: 20 litros de biscoito, vnce em 4 dias. Contato: joao@email.com",cadastrar_doacao
+Estou com 100 pacotes de macarrão para doar,cadastrar_doacao
+"Fernanda Costa aqui, tenho óleo de soja e marmitas pra doar, vence em 4 dias",cadastrar_doacao
+Gosatria de doar café,cadastrar_doacao
+Gostaria de contribuir com a campanha doando comida,cadastrar_doacao
+Gostaria de doar alimentos,cadastrar_doacao
+Gostaria de doar laranja,cadastrar_doacao
+Gostaria de odar iogurte,cadastrar_doacao
+Gostaria de oferecer refeições prontas para um abrigo,cadastrar_doacao
+Gostaria de registrar uma doação de alimentos,cadastrar_doacao
+"Luiz Rocha aqui, tenho refeições prnotas e biscoito pra doar, vence hoje",cadastrar_doacao
+Minha padaria quer doar pães todo dia,cadastrar_doacao
+Nossa empresa deseja doar o excedente da produção,cadastrar_doacao
+Nosso condomínio fez uma campanha e vamos doar os alimentos,cadastrar_doacao
+"Oi! Tenho café para doação,  2sacos. CEP 06700-000",cadastrar_doacao
+"Oi, quer odoar 100quilos de refeições prontas",cadastrar_doacao
+"Oi, quero daor 150quilos de açúcar",cadastrar_doacao
+"Oi, tudo bem?! Tenho peixe congelado para doação, 12 unidades. CEP 06710-100",cadastrar_doacao
+"Oi, tudo bem?, quero doar 150dúzias de suco",cadastrar_doacao
+"Olá! Tenho sardinha em lata para doação, 8 bandejas. CEP 06710-100",cadastrar_doacao
+"Olá! Tenho suco para doação, 25 litros. CEP 06800000",cadastrar_doacao
+"Poso doar 150 bandejas de marmitas, vence amanhã",cadastrar_doacao
+Posso contribuir com 15 litros de leite,cadastrar_doacao
+"Posso doa r80 bandejas de açúcar, vence amanhã",cadastrar_doacao
+"Posso doar 100 litros de macarrão, validade de 4 dias",cadastrar_doacao
+"Posso doar 100 quilos de frutas, vence às 14h",cadastrar_doacao
+"Posso doar 15 dúzias de peixe congelado, vence às 22h",cadastrar_doacao
+"Posso doar 25 kg de café, vence hoje",cadastrar_doacao
+"Posso doar 25 unidades de verduras, vence em 6 dias",cadastrar_doacao
+"Posso doar 3 dúzias de leite, vaildade de 8 dias",cadastrar_doacao
+"Posso doar 5 unidades de cesta básica, vence às 21h",cadastrar_doacao
+"Posso doar 8 sacos de macarrão, vece em 5 dias",cadastrar_doacao
+"Posso doar 80 údzias de sardinha em lata, vence hoje",cadastrar_doacao
+Posso doar o que sobrou do buffet de ontem?,cadastrar_doacao
+Posso entregar 12 latas de macarrão vence às 12h,cadastrar_doacao
+Posso entregar 15 caixas de cebola petro do vencimento,cadastrar_doacao
+Posso entregar 20 caixas de sopav alidade até sexta,cadastrar_doacao
+Posso entregar 5 kg de feijão perto da validade,cadastrar_doacao
+Posso entregar 80 fardos de iogurte validade até sexta,cadastrar_doacao
+Posso ntregar 5 kg de feijão perto da validade,cadastrar_doacao
+Preciso doar 200 marmitas que sobraram do evento,cadastrar_doacao
+Preciso me desfazer de ailmentos e prefiro doar,cadastrar_doacao
+Preciso me desfazer de alimentos e prefiro doar,cadastrar_doacao
+Queremos cadastrar uma doação de legumes,cadastrar_doacao
+Quero ajudar doando alimentos,cadastrar_doacao
+Quero ajudar doando alimntos,cadastrar_doacao
+Quero cadastrar a doação de 100 kg de peixe congelado e hortifúrti,cadastrar_doacao
+Quero cadastrar a doação de 100 unidades de farinha e cenoura,cadastrar_doacao
+Quero cadastrar a doação de 150 atas de peixe congelado e peixe congelado,cadastrar_doacao
+Quero cadastrar a doação de 150 dúzias de suc oe carne moída,cadastrar_doacao
+Quero cadastrar a doação de 200 dúzias de fubá e queijo,cadastrar_doacao
+Quero cadastrar a doação de 50 sacos de cesta básica e café,cadastrar_doacao
+Quero cadastrra a doação de 12 pacotes de sardinha em lata e frutas,cadastrar_doacao
+Quero doa r12 latas de peixe congelado,cadastrar_doacao
+Quero doar 10 kg de arroz,cadastrar_doacao
+Quero doar 12 nidades de banana,cadastrar_doacao
+Quero doar 2 quilosd e verduras,cadastrar_doacao
+Quero doar 40 caixas ed açúcar,cadastrar_doacao
+Quero doar 40 litros d esuco,cadastrar_doacao
+Quero doar 50 fardos de cesta básica,cadastrar_doacao
+Quero doar 8 sacs de açúcar,cadastrar_doacao
+Quero doar cestas básicas,cadastrar_doacao
+Quero doar uma carga de frutas que está perto de vencer,cadastrar_doacao
+Quero odar 12 unidades de marmitas,cadastrar_doacao
+"Sobraram 15 litros de feijãoa qui no condomínio, queria doar",cadastrar_doacao
+"Sobraram 15 quilos de óleo de soja aqui no condomínio, queria doar",cadastrar_doacao
+"Sobraram 30 caixas de leite aqui no sacolão, uqeria doar",cadastrar_doacao
+"Sobraram 40 dúzias de café aqui no açougue, qeria doar",cadastrar_doacao
+"Sobrou muita comida aqui na empresa, queria doar",cadastrar_doacao
+"Sou Ana Pereira, do feira. Tenho 150 quilos d iogurte para doar. Meu email é joao@email.com",cadastrar_doacao
+"Sou Ana Pereira, do feira. Tenho 50 sacos de cesta básica para doar. Meu email é cnotato@mercadosilva.com.br",cadastrar_doacao
+"Sou Bianca Dias, do feira. Tenho 15 caixas de água mineral para doar. Meu email é contato@mercadosilva.com.br",cadastrar_doacao
+"Sou Bianca Dias, do sacolão. Tenho 5 latas de queijo para doar. Meu emil é joao@email.com",cadastrar_doacao
+"Sou João Silva, do restaurante. Tenho 40 pacotes de cebola para doar. Meu email é contato@mercadosilvacom.br",cadastrar_doacao
+"Sou Luiz Rocha, do hotel. Tenho 100 latas de sopa para doar. Meu email é maria.souza@gmail.com",cadastrar_doacao
+"Sou Maria Souza, do escoal. Tenho 15 bandejas de café para doar. Meu email é maria.souza@gmail.com",cadastrar_doacao
+Temos excedente de hortifrúti para doação,cadastrar_doacao
+"Tenh overduras que não vou conseguir vender, posso doar?",cadastrar_doacao
+Tenho 10 pacotes de tomate para doar,cadastrar_doacao
+Tenho 12 quilos de toate para doar,cadastrar_doacao
+Tenho 15 sacos de mamão para doar,cadastrar_doacao
+Tenho 150 bandejas de frutas ara doar,cadastrar_doacao
+Tenho 20 caixas de tomate para doar hoje,cadastrar_doacao
+Tenho 30 kg de banana para doar,cadastrar_doacao
+Tenho 40 unidades de sopa paradoar,cadastrar_doacao
+Tenho 5 quilos de leite para doar,cadastrar_doacao
+Tenho 8 kg de cesta básica para doar,cadastrar_doacao
+Tenho alimentos não perecíveis para doar,cadastrar_doacao
+Tenho sobra de alimentos do meu restaurante,cadastrar_doacao
+"Tenho verduras que não vou conseguir vender, posso doar?",cadastrar_doacao
+Vou doar feijão: 20 latas. Retirada no CEP 06700-000,cadastrar_doacao
+Vou doar legumes: 80 sacos. Retirada no CEP 06700-000,cadastrar_doacao
+Vou doar uns pães de ontem,cadastrar_doacao
+Vou doar água mineral: 8 kg. Retirad no CEP 06754-020,cadastrar_doacao
+"bianca dias aqui, tenho água mineral e água mineral pra doar, vence amanhã",cadastrar_doacao
+"boa noite! tenho biscoito para doacao, 10 pacotes. cep 06710-100",cadastrar_doacao
+"boa noite, quero doar 150bandejas de açúcar",cadastrar_doacao
+"boa noite, quero doar 200bandejas de pao",cadastrar_doacao
+"boa noite, quero doar 25pacotes de farinha",cadastrar_doacao
+"boa tarde! tenho mamao para doacao, 2 bandejas. cep 06710-100",cadastrar_doacao
+"boa tarde, quero doar 40duzias de oleo de soja",cadastrar_doacao
+"boa tarde, quero doar 5litros de pao",cadastrar_doacao
+"bom dia, quero doar 150kg de ovos",cadastrar_doacao
+"bom dia, quero doar 25kg de refeicoes prontas",cadastrar_doacao
+"bom dia, quero doar 25unidades de farinha",cadastrar_doacao
+"bom dia, quero doar 50fardos de suco",cadastrar_doacao
+"carlos lima aqui, tenho macarrão e ovos pra doar, vence às 15h",cadastrar_doacao
+como posso doar 50 kg de batata?,cadastrar_doacao
+da pra doar 3 caixas de iogurte?,cadastrar_doacao
+doacao de 40 latas de milho e ervilha,cadastrar_doacao
+"doacao: 20 litros de arroz, perto do vencimento. contato: joao@email.com",cadastrar_doacao
+"doacao: 25 kg de verduras, vence amanha. contato: carlos_lima@outlook.com",cadastrar_doacao
+doar 80 kg de frango congelado,cadastrar_doacao
+doação de 40 latas de milho e ervilha,cadastrar_doacao
+"doação: 200 latas de iogurte, validade até sexta. contato: contato@mercadosilva.com.br",cadastrar_doacao
+"doação: 3 caixas de mamão, vence amanhã. contato: ana.p@empresa.com",cadastrar_doacao
+"doação: 40 unidades de tomate, vence às 21h. contato: joao@email.com",cadastrar_doacao
+dá pra doar 3 caixas de iogurte?,cadastrar_doacao
+estou com 100 pacotes de macarrão para doar,cadastrar_doacao
+gostaria de doar acucar,cadastrar_doacao
+gostaria de doar alimentos,cadastrar_doacao
+gostaria de doar açúcar,cadastrar_doacao
+gostaria de doar batata,cadastrar_doacao
+gostaria de doar hortifruti,cadastrar_doacao
+gostaria de doar legumes,cadastrar_doacao
+gostaria de doar sardinha em lata,cadastrar_doacao
+gostaria de registrar uma doação de alimentos,cadastrar_doacao
+"luiz rocha aqui, tenho frutas e água mineral pra doar, perto do vencimento",cadastrar_doacao
+meu açougue quer doar 2 quilos de feijão (vence em 4 dias),cadastrar_doacao
+meu empresa quer doar 20 caixas de banana (vence em 5 dias),cadastrar_doacao
+meu empresa quer doar 25 kg de frango congelado (vence às 20h),cadastrar_doacao
+meu escola quer doar 3 sacos de biscoito (vence amanhã),cadastrar_doacao
+meu escola quer doar 30 sacos de cesta básica (validade 7/7),cadastrar_doacao
+meu feira quer doar 10 sacos de óleo de soja (perto do vencimento),cadastrar_doacao
+meu lanchonete quer doar 30 latas de cafe (vence as 21h),cadastrar_doacao
+meu lanchonete quer doar 80 bandejas de mcaarrão (vence amanhã),cadastrar_doacao
+meu mercado quer doar 15 latas de suco (validade até sexta),cadastrar_doacao
+meu mercado tem produtos perto do vencimento para doar,cadastrar_doacao
+meu refeitório quer doar 40 unidades de verduras (vence em 6 dias),cadastrar_doacao
+meu sacolão quer doar 12 bandejas de refeições prontas (vence hoje),cadastrar_doacao
+meu sacolão quer doar 2 latas de hortifrúti (alidade 8/11),cadastrar_doacao
+"oi! tenho iogurte para doação, 8 pacotes. cep 06800000",cadastrar_doacao
+"oi, quero doar 100dúzias de batata",cadastrar_doacao
+"oi, quero doar 30quilos de leite",cadastrar_doacao
+"oi, tudo bem?! tenho mamao para doacao, 30 duzias. cep 06800000",cadastrar_doacao
+"oi, tudo bem?! tenho sardinha em lata para doação, 30 latas. cep 06754-020",cadastrar_doacao
+"oi, tudo bem?, quero doar 100kg de refeições prontas",cadastrar_doacao
+"oi, tudo bem?, quero doar 20kg de biscoito",cadastrar_doacao
+"oi, tudo bem?, quero doar 50quilos de água mineral",cadastrar_doacao
+"ola! tenho peixe congelado para doacao, 3 quilos. cep 06710-100",cadastrar_doacao
+"ola, quero doar 2pacotes de marmitas",cadastrar_doacao
+"olá, quero doar 8bandejas de cebola",cadastrar_doacao
+posso contribuir com 15 litros de leite,cadastrar_doacao
+"posso doar 12 dúzias de enlatados, vence amanhã",cadastrar_doacao
+"posso doar 15 unidades de verduras, vence amanha",cadastrar_doacao
+"posso doar 2 sacos de feijão, perto do vencimento",cadastrar_doacao
+"posso doar 200 quilos de banana, validade ate sexta",cadastrar_doacao
+"posso doar 25 kg de óleo de soja, vence às 16h",cadastrar_doacao
+"posso doar 3 kg de marmitas, vence hoje",cadastrar_doacao
+"posso doar 5 litros de arroz, validade de 9 dias",cadastrar_doacao
+posso doar frutas?,cadastrar_doacao
+posso entregar 100 bandejas de biscoito perto do vencimento,cadastrar_doacao
+posso entregar 150 kg de açúcar vence em 7 dias,cadastrar_doacao
+posso entregar 30 caixas de ovos vence em 6 dias,cadastrar_doacao
+posso entregar 5 latas de carne moída vence hoje,cadastrar_doacao
+posso entregar 5 unidades de legumes validade 21/5,cadastrar_doacao
+posso entregar 5 unidades de queijo validade de 8 dias,cadastrar_doacao
+posso entregar 8 bandejas de hortifruti vence amanha,cadastrar_doacao
+qeuro doar!,cadastrar_doacao
+qro doar comida,cadastrar_doacao
+queria doa umas frutas,cadastrar_doacao
+queria doar umas cestas de natal,cadastrar_doacao
+quero cadastrar a doacao de 10 sacos de carne moida e peixe congelado,cadastrar_doacao
+quero cadastrar a doacao de 12 caixas de verduras e cafe,cadastrar_doacao
+quero cadastrar a doacao de 150 quilos de leite e biscoito,cadastrar_doacao
+quero cadastrar a doacao de 200 caixas de cafe e mamao,cadastrar_doacao
+quero cadastrar a doacao de 3 caixas de tomate e macarrao,cadastrar_doacao
+quero cadastrar a doacao de 5 kg de frutas e refeicoes prontas,cadastrar_doacao
+quero cadastrar a doação de 150 kg de refeições prontas e legumes,cadastrar_doacao
+quero cadastrar a doação de 150 sacos de enlatados e carne moída,cadastrar_doacao
+quero doar 10 bandejas de enlatados,cadastrar_doacao
+quero doar 10 kg de arroz,cadastrar_doacao
+quero doar 12 sacos de café,cadastrar_doacao
+quero doar 150 fardos de óleo de soja,cadastrar_doacao
+quero doar comida,cadastrar_doacao
+quero doar!,cadastrar_doacao
+quero fazer uma doação,cadastrar_doacao
+quero fazer uma doação de água mineral,cadastrar_doacao
+"sobraram 100 fardos de cenoura aqui no empresa, queria doar",cadastrar_doacao
+"sobraram 100 pacotes de sopa aqui no refeitório, queria doar",cadastrar_doacao
+"sobraram 12 fardos de pão aqui no escola, queria doar",cadastrar_doacao
+"sobraram 150 unidades de enlatados aqui no feira, queria doar",cadastrar_doacao
+"sobraram 80 fardos de ovos aqui no sacolão, queria doar",cadastrar_doacao
+"sobrou muita comida aqui na empresa, queria doar",cadastrar_doacao
+"sou ana pereira, do hotel. tenho 25 caixas de agua mineral para doar. meu email e contato@mercadosilva.com.br",cadastrar_doacao
+"sou ana pereira, do restaurante. tenho 20 quilos de queijo para doar. meu email e maria.souza@gmail.com",cadastrar_doacao
+"sou bianca dias, do escola. tenho 5 bandejas de queijo para doar. meu email e contato@mercadosilva.com.br",cadastrar_doacao
+"sou joao silva, do hotel. tenho 2 pacotes de enlatados para doar. meu email e ana.p@empresa.com",cadastrar_doacao
+"sou joao silva, do lanchonete. tenho 40 sacos de pao para doar. meu email e maria.souza@gmail.com",cadastrar_doacao
+"sou joão silva, do hotel. tenho 25 pacotes de cenoura para doar. meu email é ana.p@empresa.com",cadastrar_doacao
+"sou joão silva, do padaria. tenho 25 bandejas de arroz para doar. meu email é contato@mercadosilva.com.br",cadastrar_doacao
+"sou luiz rocha, do lanchonete. tenho 200 caixas de cenoura para doar. meu email e ana.p@empresa.com",cadastrar_doacao
+"sou maria souza, do feira. tenho 150 unidades de laranja para doar. meu email e maria.souza@gmail.com",cadastrar_doacao
+tenho 12 dúzias de ovos para doação,cadastrar_doacao
+tenho 3 litros de pão para doar,cadastrar_doacao
+tenho 50 bandejas de ovos para doar,cadastrar_doacao
+tenho 50 unidades de iogurte para doar,cadastrar_doacao
+tenho alimentos nao pereciveis para doar,cadastrar_doacao
+tenho comida pra doar,cadastrar_doacao
+tenho uns pães pra doa,cadastrar_doacao
+to com pao e leite pra doar,cadastrar_doacao
+v consegue receber uma doação minha?,cadastrar_doacao
+vc consegue receber uma doação minha?,cadastrar_doacao
+vou doar cenoura: 8 kg. retirada no cep 06710-100,cadastrar_doacao
+vou doar frutas: 40 kg. retirada no cep 06754-020,cadastrar_doacao
+vou doar legumes: 20 unidades. retirada no cep 06705-000,cadastrar_doacao
+vou doar leite e biscoitos,cadastrar_doacao
+vou doar macarrão: 5 dúzias. retirada no cep 06700-000,cadastrar_doacao
+vou doar queijo: 12 quilos. retirada no cep 06700-000,cadastrar_doacao
+vou doar verduras: 150 kg. retirada no cep 06710-100,cadastrar_doacao
+A ONG já recebeu o que eu doei?,consultar_status
+A ONG já recebue o que eu doei?,consultar_status
+Acompanhar doação,consultar_status
+Acompanhar protocolo MF-20260110-6780,consultar_status
+Acompanhar protocolo MF-20260224-9168,consultar_status
+Acompanhar protocolo MF-20261116-2821,consultar_status
+Acompanhar protooclo MF-20260627-6225,consultar_status
+Cadê minha doação?,consultar_status
+Cnosultar MF-20260205-1431,consultar_status
+Como consultar se a doação já foi entregue?,consultar_status
+Como sei se minha doação foi aceita pela ONG?,consultar_status
+Consegue ver o meu protocolo?,consultar_status
+Consultar F-20260712-1866,consultar_status
+Consultar MF-20260409-2526,consultar_status
+Consultar MF-20260516-2391,consultar_status
+"Fiz uma doação semana passada, como está?",consultar_status
+Gostaria de checar uma doação,consultar_status
+Gostaria de ver o histórico das minhas doações,consultar_status
+Já foi retirada a miha doação?,consultar_status
+Já foi retirada a minha doação?,consultar_status
+Já tem ONG para a minha doação?,consultar_status
+MF-20260310-5254 - ual a situação?,consultar_status
+MF-20260411-6612 - qual a situação?,consultar_status
+MF-20260419-8940-  qual a situação?,consultar_status
+MF-20261007-7502 - qual a situação?,consultar_status
+MF-20261122-6548 - qual a situação?,consultar_status
+MF-20261207-7849 - qual a situação?,consultar_status
+"Meu protocol oé MF-20261120-0726, como está?",consultar_status
+"Meu protocool é MF-20260715-9126, como está?",consultar_status
+Minha doação ainda está pendente?,consultar_status
+Minha doação foi aceita?,consultar_status
+O protocolo MF-20261021-1393 já tem ONG?,consultar_status
+Onde está o meu pedido de doação?,consultar_status
+Onde está o meu pedido de doção?,consultar_status
+Preciso verificar uma doação que cadastrei,consultar_status
+Qual ONG ficou com a minha doação?,consultar_status
+Qual o protocolo da minha doação?,consultar_status
+Qual o status da minha doação?,consultar_status
+Qual o status do protocolo MF-20260212-901?,consultar_status
+Quero acompanhar minha doação,consultar_status
+Quero consultar a doação FM-20260314-4522,consultar_status
+Quero consultar a doação MF-20260508-8367,consultar_status
+Quero consultar a doação MF20261020-5316,consultar_status
+Quero consultar o protocolo,consultar_status
+Quero saber o andamento da doação que fiz ontem,consultar_status
+Quero saber para onde foi minha doação,consultar_status
+"Tenho um protocolo, como vejo a situação?",consultar_status
+acompanhar doacao,consultar_status
+acompanhar protocolo mf-20260305-4406,consultar_status
+acompanhar protocolo mf-20260516-1261,consultar_status
+acompanhar protocolo mf-20260703-7358,consultar_status
+como está a doação mf-20261017-2779?,consultar_status
+como está a minha dação,consultar_status
+como está a minha doação,consultar_status
+consegue ver o meu protocolo?,consultar_status
+consultar mf-20261223-8045,consultar_status
+consultar status da doação,consultar_status
+historico do meu cadastro de doacao,consultar_status
+histórico do meu cadastro de doação,consultar_status
+já tem ong para a minha doação?,consultar_status
+me diz a situação da doação,consultar_status
+"meu protocolo e mf-20261125-9013, como esta?",consultar_status
+mf-20260819-6567 - qual a situacao?,consultar_status
+minha doacao ainda esta pendente?,consultar_status
+minha doacao mf-20260527-1134 ja foi aceita?,consultar_status
+o protocolo mf-20260126-5891 ja tem ong?,consultar_status
+o protocolo mf-20260914-1693 ja tem ong?,consultar_status
+o protocolo mf-20260928-6854 ja tem ong?,consultar_status
+preciso verificar uma doação que cadastrei,consultar_status
+qual o protocolo da minha doação?,consultar_status
+qual o status da minha doação?,consultar_status
+qual o status do protocolo mf-20260515-5897?,consultar_status
+qual o status do protocolo mf-20261215-3435?,consultar_status
+quero consultar a doacao mf-20260422-5817,consultar_status
+quero consultar a doação mf-20260310-0111,consultar_status
+status MF-0260313-5229,consultar_status
+status MF-20260704-0173,consultar_status
+status MF-20260811-7506,consultar_status
+status da doacao por favor,consultar_status
+status da doação por favor,consultar_status
+status mf-20260508-8124,consultar_status
+tenho um código de acompanhamento,consultar_status
+ver andamento,consultar_status
+123456,fora_de_escopo
+Como cozinhar arroz soltinho?,fora_de_escopo
+Como declarar imposto de renda?,fora_de_escopo
+Como emagrecer rápido?,fora_de_escopo
+Como fazer pão caseiro?,fora_de_escopo
+Como faço para trocar a senha da minha conta bancária?,fora_de_escopo
+Como faço um currículo?,fora_de_escopo
+Como faço umcurrículo?,fora_de_escopo
+"Estou com dor de cabeça, o que tomo?",fora_de_escopo
+Gosto de assistir filmes de ficção científica,fora_de_escopo
+Gosto de assistir flmes de ficção científica,fora_de_escopo
+Me conta uma piada,fora_de_escopo
+Me ensina a programar em Python,fora_de_escopo
+Me indica uma série para assistir,fora_de_escopo
+Onde comprar feijão barato?,fora_de_escopo
+Onde fca o hospital mais próximo?,fora_de_escopo
+Onde fica o hospital mais próximo?,fora_de_escopo
+Preciso de um encanador,fora_de_escopo
+Qual a capital da França?,fora_de_escopo
+Qual o horário do ônibus para o centro?,fora_de_escopo
+Qual o melhor celular para comprar?,fora_de_escopo
+Qual o preço da banana hoje?,fora_de_escopo
+Qual o resultado da loteria?,fora_de_escopo
+Qual é a preivsão do tempo para hoje?,fora_de_escopo
+Qual é a previsão do tempo para hoje?,fora_de_escopo
+Qual é a receita de bolo de cenoura?,fora_de_escopo
+Qual é o seu time de futebol?,fora_de_escopo
+Quanto custa o quilo do arroz no mercado?,fora_de_escopo
+Quanto é 25 vezes 4?,fora_de_escopo
+Que horas são?,fora_de_escopo
+Quem venceu o jogo de futebol ontem?,fora_de_escopo
+Quem venceu o jogo de futeol ontem?,fora_de_escopo
+Quem é o presidente do Brasil?,fora_de_escopo
+Quero comprar um carro usado,fora_de_escopo
+Quero pedir uma pizza,fora_de_escopo
+Tem desconto no supermercado hoje?,fora_de_escopo
+Traduza esta frase para o inglês,fora_de_escopo
+"Vou viajar amanhã, qual roupa levo?",fora_de_escopo
+asdfgh,fora_de_escopo
+bla bla bla,fora_de_escopo
+coisa comida la,fora_de_escopo
+como declarar imposto de renda?,fora_de_escopo
+"estou com dor de cabeça, o que tomo?",fora_de_escopo
+kkkkkkk,fora_de_escopo
+me indica uma série para assistir,fora_de_escopo
+onde comprar feijao barato?,fora_de_escopo
+quanto custa um iphone,fora_de_escopo
+quanto e 25 vezes 4?,fora_de_escopo
+quem e o presidente do brasil?,fora_de_escopo
+receita de feijoada,fora_de_escopo
+teste,fora_de_escopo
+traduza esta frase para o inglês,fora_de_escopo
+"Descarto essa, qual a outra?",recusar_opcao
+Essa ONG não me atende,recusar_opcao
+"Essa não dá, fica longe demais",recusar_opcao
+Essa é muito longe,recusar_opcao
+Eu rejeito essa opção,recusar_opcao
+Mostra a segunda opção,recusar_opcao
+"Nao quero essa, tem outra?",recusar_opcao
+Não,recusar_opcao
+"Não aceiot, quero a segunda opção",recusar_opcao
+Não aceito,recusar_opcao
+Não aceito essa ONG,recusar_opcao
+"Não aceito, quero a segunda opção",recusar_opcao
+"Não aceito, tem outa?",recusar_opcao
+"Não aceito, tem outra?",recusar_opcao
+Não consigo ir nessa,recusar_opcao
+Não fico com essa,recusar_opcao
+Não posso levar até lá,recusar_opcao
+"Não serve, mostra a próxima",recusar_opcao
+Não é essa que eu quero,recusar_opcao
+"Não, prefiro outra",recusar_opcao
+"Passo essa, qual a outra?",recusar_opcao
+Pode mostrar a outra,recusar_opcao
+Prefir oa segunda,recusar_opcao
+Prefiro a outra,recusar_opcao
+Prefiro a segunda,recusar_opcao
+"Próxima opção, por favor",recusar_opcao
+Quero ver a outra ONG,recusar_opcao
+Recuso essa opção,recusar_opcao
+Rejeito a suestão,recusar_opcao
+Rejeito a sugestão,recusar_opcao
+Tem alguma outra?,recusar_opcao
+Tem outra mais perto?,recusar_opcao
+Troca por outra ONG,recusar_opcao
+"essa não dá, fica longe demais",recusar_opcao
+essa é muito longe,recusar_opcao
+eu rejeito essa opção,recusar_opcao
+melhor a outra,recusar_opcao
+mostra a segunda opcao,recusar_opcao
+nao aceito,recusar_opcao
+"nao, obrigado",recusar_opcao
+negativo,recusar_opcao
+negtivo,recusar_opcao
+"não, obrigado",recusar_opcao
+"não, quero outra opção",recusar_opcao
+outra opção,recusar_opcao
+pode mostrar a outra,recusar_opcao
+quero a segunda ONG,recusar_opcao
+recuso,recusar_opcao
+Boa noite,saudacao_ajuda
+Boa tarde,saudacao_ajuda
+Bom dia,saudacao_ajuda
+Como esse sistema funciona?,saudacao_ajuda
+Como funciona a doação por aqui?,saudacao_ajuda
+Como funciona?,saudacao_ajuda
+Como usar o chat?,saudacao_ajuda
+E aí,saudacao_ajuda
+Hello,saudacao_ajuda
+Início,saudacao_ajuda
+Me ajuda?,saudacao_ajuda
+O que você faz?,saudacao_ajuda
+O que é o MESAFARTAI?,saudacao_ajuda
+Oi,saudacao_ajuda
+"Oi, pode me ajudar?",saudacao_ajuda
+Olá,saudacao_ajuda
+"Olá, tudo bem?",saudacao_ajuda
+Opa,saudacao_ajuda
+Para que serve esse chat?,saudacao_ajuda
+Pode me explicar o sistema?,saudacao_ajuda
+Preciso de ajuda,saudacao_ajuda
+Quem é você?,saudacao_ajuda
+Salve,saudacao_ajuda
+ajuda,saudacao_ajuda
+boa noite,saudacao_ajuda
+boa tarde,saudacao_ajuda
+"bom dia, tudo certo?",saudacao_ajuda
+começar,saudacao_ajuda
+e aí,saudacao_ajuda
+hello,saudacao_ajuda
+menu,saudacao_ajuda
+o que você faz?,saudacao_ajuda
+"oi, tudo bem?",saudacao_ajuda
+oie,saudacao_ajuda
+"olá, queria entender como funciona",saudacao_ajuda
+"olá, tudo bem?",saudacao_ajuda
+A creche precisa urgente de laranja,solicitar_alimentos
+A nossa cozinha comunitária está sem estoque,solicitar_alimentos
+Como cadastro minha entidade para receber comida?,solicitar_alimentos
+Como faço para a minha ONG entrar no sistema?,solicitar_alimentos
+Como faço para solicitar comida para nossa cozinha social?,solicitar_alimentos
+Como minha ONG recebe doações?,solicitar_alimentos
+Como minha associação de moradores pode receber suco?,solicitar_alimentos
+Como minha casa de acolhimento pod ereceber peixe congelado?,solicitar_alimentos
+Como minha casa de acolhimento pode receber café?,solicitar_alimentos
+Estamos buscando marmitas e cestas básicas urgentemente,solicitar_alimentos
+Estamos com falta de alimentos no abrigo,solicitar_alimentos
+Estamos precisando de doações de leite,solicitar_alimentos
+Estamosprecisando de doações de marmitas,solicitar_alimentos
+Existe alguma doação para retirar hoje?,solicitar_alimentos
+Gostaria de receber alimentos para o nosso projeto social,solicitar_alimentos
+"Minha família está sem comida, como consigo ajuda?",solicitar_alimentos
+Nossa ON precisa de tomate,solicitar_alimentos
+Nossa ONG precis de frutas,solicitar_alimentos
+Nossa ONG precisa de açúcar,solicitar_alimentos
+Nossa ONG precisa de doações de alimentos,solicitar_alimentos
+Nossa ONG precisa de verduras,solicitar_alimentos
+Nossa associação de moradores precisa de cestas básicas,solicitar_alimentos
+"Nossa casa de acolhimento está sem cebola, como pedir?",solicitar_alimentos
+"Nossa instituição está sem batata, como pedir?",solicitar_alimentos
+Nossa instituição precisa de mantimentos,solicitar_alimentos
+Nosso banco de alimentos precisa de reposição,solicitar_alimentos
+Onde peço comida para o meu grupo de voluntários?,solicitar_alimentos
+Precisamos de 10 dúzias de biscoito para a nossa associação de moradores,solicitar_alimentos
+Precisamos de arroz e feijão para a nossa cozinha,solicitar_alimentos
+Precisamos de leite para as crianças do abrigo,solicitar_alimentos
+"Preciso de comida, estou passando necessidade",solicitar_alimentos
+Preciso de suprimentos para o abrigo comunitário,solicitar_alimentos
+Precsamos de arroz e feijão para a nossa cozinha,solicitar_alimentos
+Qeremos receber doações de leite e batata,solicitar_alimentos
+Qeuro receber doações de alimentos,solicitar_alimentos
+Quais doações estão disponíveis para retirada na região?,solicitar_alimentos
+Queremos receber doações de sopa e hortifrúti,solicitar_alimentos
+Queremos reeber doações de iogurte e fubá,solicitar_alimentos
+Queria pedir alimentos para a minha comunidade,solicitar_alimentos
+Quero cadastrar miha ONG para receber alimentos,solicitar_alimentos
+Quero cadastrar minha ONG para receber alimentos,solicitar_alimentos
+Quero pedir uma cesta básica,solicitar_alimentos
+Quero receber doações de alimentos,solicitar_alimentos
+Quero solicitar doação para um asilo,solicitar_alimentos
+Somos uma ONG e queremos receber doações,solicitar_alimentos
+Somos uma associação de moradores e precisamso de cebola,solicitar_alimentos
+Somos uma casa de acolhimento e precisamos de cebola,solicitar_alimentos
+Somos uma cozinha comunitária e precisamos de hrotifrúti,solicitar_alimentos
+Somos uma cozinha comunitária e precisamos de marmitas,solicitar_alimentos
+Somos uma instituição e precismaos de laranja,solicitar_alimentos
+Sou de uma instituição e precisamos de ajuda com alimentos,solicitar_alimentos
+Tem comida disponível para a gente buscar?,solicitar_alimentos
+a associação de moradores precisa urgente de biscoito,solicitar_alimentos
+a cozinha comunitária precisa urgente de fubá,solicitar_alimentos
+a creche precisa urgente de frutas,solicitar_alimentos
+a entidade precisa urgente de banana,solicitar_alimentos
+a ong precisa urgente de fubá,solicitar_alimentos
+como faço para a minha ong entrar no sistema?,solicitar_alimentos
+como minha associação de moradores pode receber mamão?,solicitar_alimentos
+como minha associação de moradores pode receber sardinha em lata?,solicitar_alimentos
+como minha casa de acolhimento pode receber marmitas?,solicitar_alimentos
+como minha cozinha comunitaria pode receber verduras?,solicitar_alimentos
+como minha entidade pode receber frutas?,solicitar_alimentos
+estamos precisando de alimentos urgente,solicitar_alimentos
+etsamos precisando de alimentos urgente,solicitar_alimentos
+nossa instituicao precisa de mantimentos,solicitar_alimentos
+nossa ong precisa de doações de alimentos,solicitar_alimentos
+nossa ong precisa de frutas,solicitar_alimentos
+nossa ong precisa de leite,solicitar_alimentos
+nossa ong precisa de peixe congelado,solicitar_alimentos
+nossa ong precisa de tomate,solicitar_alimentos
+precisamos de 10 sacos de feijao para a nossa creche,solicitar_alimentos
+precisamos de 15 kg de leite para a nossa entidade,solicitar_alimentos
+precisamos de 20 quilos de banana para a nossa instituicao,solicitar_alimentos
+precisamos de 25 latas de cenoura para a nossa ong,solicitar_alimentos
+preciso de ajuda com comida,solicitar_alimentos
+"preciso de comida, estou passando necessidade",solicitar_alimentos
+queremos receber doacoes de mamao e cesta basica,solicitar_alimentos
+queremos receber doações de carne moída e óleo de soja,solicitar_alimentos
+queremos receber doações de hortifrúti e enlatados,solicitar_alimentos
+queremos receber doações de peixe congelado e biscoito,solicitar_alimentos
+queremos receber doações de refeições prontas e pão,solicitar_alimentos
+quero pedir uma cesta basica,solicitar_alimentos
+somos uma entidade e precisamos de frutas,solicitar_alimentos

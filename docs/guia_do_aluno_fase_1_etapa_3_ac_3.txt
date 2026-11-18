@@ -1,0 +1,227 @@
+========================================================================
+MESAFARTAI - AULA 11 / FASE 1 ETAPA 3 (AC-3) - VALOR 0,5 PONTO
+========================================================================
+OBJETIVO: Implementar o Extrator de Entidades por Regex (src/entities.py) 
+e o Motor de Matchmaking Logístico por KNN (src/matchmaking.py) utilizando
+o VS Code e sincronizando as alterações com o GitHub.
+------------------------------------------------------------------------
+
+PASSO 1: SINCRONIZAR E PREPARAR O REPOSITÓRIO NO VS CODE
+1. Copie todas as instruções desta etapa no arquivos docs/regras.txt
+2. Abra o VS Code para a continuidade do desenvolvimento do seu projeto
+3. Habilite
+4. Abra a pasta do projeto 'PROJETO-MESAFARTAI' no VSCode: abra um terminal
+e digite: code .
+5. Baixe as atualizações mais recentes do grupo no GitHub executando:
+   git pull origin main
+
+ATENÇÃO: Se o projeto não estiver baixado na máquina que você está é
+necessário voltar a aula 10 e refazer a etapa de clonar projeto.
+
+6. Certifique-se de que as dependências do projeto estão instaladas:
+   pip install -r requirements.txt
+
+
+------------------------------------------------------------------------
+PASSO 2: CRIAR O EXTRATOR DE ENTIDADES POR REGEX (src/entities.py)
+------------------------------------------------------------------------
+Crie o arquivo entities.py dentro do diretório src/ e cole o código abaixo:
+
+"""
+MESAFARTAI - Módulo de Extração de Entidades Nomeadas (Regex)
+Arquivo: src/entities.py
+"""
+
+import re
+from datetime import datetime, timedelta
+
+class ExtratorEntidades:
+    def __init__(self):
+        # Padrão Regex para extrair números associados a unidades de peso
+        self.padrao_quantidade = r'(\d+(?:[\.,]\d+)?)\s*(?:kg|quilos|kilos|caixas|sacas)'
+        self.vocabulario_alimentos = [
+            "arroz", "feijão", "feijao", "tomate", "banana", "leite", 
+            "marmita", "marmitas", "pão", "pao", "legumes", "frutas", "carne"
+        ]
+
+    def extrair_quantidade(self, texto):
+        match = re.search(self.padrao_quantidade, texto, re.IGNORECASE)
+        if match:
+            valor_str = match.group(1).replace(',', '.')
+            return float(valor_str)
+        return 1.0  # Valor padrão (1 kg) se não informado
+
+    def extrair_alimento(self, texto):
+        texto_lower = texto.lower()
+        for item in self.vocabulario_alimentos:
+            if item in texto_lower:
+                return item.capitalize()
+        return "Alimentos Diversos"
+
+    def extrair_validade(self, texto):
+        texto_lower = texto.lower()
+        hoje = datetime.now()
+        
+        if "hoje" in texto_lower:
+            return hoje.strftime("%Y-%m-%d")
+        elif "amanhã" in texto_lower or "amanha" in texto_lower:
+            return (hoje + timedelta(days=1)).strftime("%Y-%m-%d")
+        else:
+            return (hoje + timedelta(days=3)).strftime("%Y-%m-%d")
+
+    def processar_texto(self, texto):
+        return {
+            "alimento": self.extrair_alimento(texto),
+            "quantidade_kg": self.extrair_quantidade(texto),
+            "data_validade": self.extrair_validade(texto)
+        }
+
+if __name__ == "__main__":
+    extrator = ExtratorEntidades()
+    frase_teste = "Tenho 15.5 kg de tomate para doar hoje até o final do dia"
+    resultado = extrator.processar_texto(frase_teste)
+    print("--- TESTE DE EXTRAÇÃO REGEX ---")
+    print(f"Frase: '{frase_teste}'")
+    print(f"Entidades Extraídas: {resultado}")
+
+
+------------------------------------------------------------------------
+PASSO 3: CRIAR O MOTOR DE MATCHMAKING KNN (src/matchmaking.py)
+------------------------------------------------------------------------
+Crie o arquivo matchmaking.py dentro do diretório src/ e cole o código abaixo:
+
+"""
+MESAFARTAI - Motor de Matchmaking Logístico via KNN
+Arquivo: src/matchmaking.py
+Descrição: Localiza a ONG geograficamente mais próxima no espaço vetorial 2D.
+"""
+
+import sqlite3
+import numpy as np
+from sklearn.neighbors import NearestNeighbors
+
+
+class MotorMatchmaking:
+    def __init__(self, db_path="mesafartai.db"):
+        self.db_path = db_path
+        self._garantir_tabela_e_seeds()
+
+    def _garantir_tabela_e_seeds(self):
+        """Garante que a tabela 'usuarios' existe e possui dados de teste (ONGs)."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        # Criar a tabela caso não exista
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS usuarios (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nome TEXT NOT NULL,
+                tipo TEXT NOT NULL,
+                latitude REAL NOT NULL,
+                longitude REAL NOT NULL
+            )
+        """)
+
+        # Verificar se existem ONGs cadastradas
+        cursor.execute("SELECT COUNT(*) FROM usuarios WHERE tipo = 'ONG'")
+        total_ongs = cursor.fetchone()[0]
+
+        # Se não houver ONGs, insere dados fictícios para teste
+        if total_ongs == 0:
+            ongs_seed = [
+                ("ONG Prato Quente - Centro", "ONG", -23.612, -46.781),
+                ("Abrigo Esperança - Zona Sul", "ONG", -23.630, -46.800),
+                ("Instituto Fartura - Zona Oeste", "ONG", -23.590, -46.750)
+            ]
+            cursor.executemany("""
+                INSERT INTO usuarios (nome, tipo, latitude, longitude)
+                VALUES (?, ?, ?, ?)
+            """, ongs_seed)
+            conn.commit()
+
+        conn.close()
+
+    def buscar_ongs(self):
+        """Busca todas as ONGs ativas cadastradas no banco de dados SQLite."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, nome, latitude, longitude FROM usuarios WHERE tipo = 'ONG'")
+        ongs = cursor.fetchall()
+        conn.close()
+        return ongs
+
+    def encontrar_ong_mais_proxima(self, lat_doador, long_doador):
+        """Aplica o algoritmo KNN para encontrar o vizinho mais próximo."""
+        ongs = self.buscar_ongs()
+        if not ongs:
+            return None
+
+        # Monta a matriz de coordenadas das ONGs: [[lat, long], ...]
+        coords_ongs = np.array([[ong[2], ong[3]] for ong in ongs])
+
+        # Treina o modelo KNN com distância Euclidiana (1 vizinho)
+        knn = NearestNeighbors(n_neighbors=1, metric='euclidean')
+        knn.fit(coords_ongs)
+
+        # Coordenada do Doador
+        ponto_doador = np.array([[lat_doador, long_doador]])
+
+        # Calcula a menor distância
+        distancias, indices = knn.kneighbors(ponto_doador)
+
+        idx_ong_proxima = indices[0][0]
+        distancia_calculada = distancias[0][0]
+        ong_selecionada = ongs[idx_ong_proxima]
+
+        return {
+            "ong_id": ong_selecionada[0],
+            "ong_nome": ong_selecionada[1],
+            "distancia_estimada": round(float(distancia_calculada * 111), 2)  # Conversão aprox. em KM
+        }
+
+
+if __name__ == "__main__":
+    motor = MotorMatchmaking()
+    # Coordenada de teste (Ex: Supermercado/Doador)
+    lat_teste, long_teste = -23.615, -46.785
+    match = motor.encontrar_ong_mais_proxima(lat_teste, long_teste)
+
+    print("--- TESTE DE MATCHMAKING LOGÍSTICO (KNN) ---")
+    if match:
+        print(f"ONG Encontrada: {match['ong_nome']} (ID: {match['ong_id']})")
+        print(f"Distância Estimada: {match['distancia_estimada']} km")
+    else:
+        print("Nenhuma ONG cadastrada para realizar o match.")
+
+------------------------------------------------------------------------
+PASSO 4: EXECUTAR E VALIDAR OS SCRIPTS NO TERMINAL DO VS CODE
+------------------------------------------------------------------------
+Execute os comandos abaixo no terminal do VS Code e verifique se as saídas são exibidas sem erros:
+
+python src/entities.py
+python src/matchmaking.py
+
+
+------------------------------------------------------------------------
+PASSO 5: COMMIT E PUSH FINAL PARA O GITHUB
+------------------------------------------------------------------------
+Sincronize as alterações do grupo com o repositório remoto executando os comandos a seguir no terminal do VS Code:
+
+git add .
+git commit -m "feat(logistics): implementa extracao por regex e matchmaking knn"
+git push origin main
+
+
+------------------------------------------------------------------------
+CHECKLIST DA ETAPA 3 (AC-3)
+------------------------------------------------------------------------
+• [ ] Repositório sincronizado via `git pull` antes de iniciar.
+• [ ] Arquivo `src/entities.py` criado e validado no terminal sem erros.
+• [ ] Arquivo `src/matchmaking.py` criado e validado no terminal sem erros.
+• [ ] Alterações enviadas com sucesso ao GitHub via `git push origin main`.
+
+
+
+
+
+

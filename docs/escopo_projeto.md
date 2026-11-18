@@ -1,0 +1,3 @@
+ - O problema de negócio abordado. (está no documento da aula passada - Item 3 escopo)
+ - O público-alvo (Doadores vs. ONGs).
+ - O escopo das intenções tratadas e os dados que serão coletados no chat.(está no documento da aula passada - Item 5 passo 3 - apenas a descrição sem o código)
